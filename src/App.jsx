@@ -1,8 +1,11 @@
 import React from 'react'
+import Header_section from './components/Header_section.jsx'
 
 const App = () => {
   return (
-    <div className='text-3xl bg-amber-200 text-center'>App</div>
+    <div>
+      <Header_section />
+    </div>
   )
 }
 
