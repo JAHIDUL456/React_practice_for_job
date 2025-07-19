@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header_section from './Header_section'; // 👈 import Header
-
+import star from '/star.svg';
 const Movie_list = () => {
     const [movie, setMovie] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -90,6 +90,13 @@ const Movie_list = () => {
                             <h2 className="text-white mt-2 text-center font-semibold text-lg">
                                 {item.title}
                             </h2>
+                            <div className="flex items-center mt-2">
+                                <img src={star} alt="" />
+                                <span className="text-yellow-400 ml-1">
+                                    {item.vote_average}
+                                </span>
+
+                            </div>
                         </div>
                     ))}
                 </div>
