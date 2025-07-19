@@ -1,19 +1,19 @@
-import React from 'react'
+import React, { use } from 'react'
 import hero from '/hero.png'
 import { useState, useEffect } from 'react'
+
 
 const Header_section = () => {
     // eikhane ami search niye kichu code korbo
     const[search,setSearch] = React.useState("");
     const [handle,sethandle] = React.useState("");
+ 
 
     const handleSearch=()=>{
         sethandle(search);
     }
 
-    // this section is for the api data fetching
     
-
 
 
 
