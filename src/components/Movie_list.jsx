@@ -85,7 +85,7 @@ const Movie_list = () => {
                             <img
                                 src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
                                 alt={item.title}
-                                className="w-full h-[300px] object-cover rounded-md"
+                                className="w-[250px] h-auto object-cover rounded-md"
                             />
                             <h2 className="text-white mt-2 text-center font-semibold text-lg">
                                 {item.title}
